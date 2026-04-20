@@ -52,10 +52,10 @@ python models/train_model.py
 streamlit run app.py
 ```
 ### Future Enhancements
-Deep learning-based recommendation system
-Real-time API integration
-User authentication system
-Deployment on cloud (AWS/Streamlit Cloud)
+-Deep learning-based recommendation system
+-Real-time API integration
+-User authentication system
+-Deployment on cloud (AWS/Streamlit Cloud)
 
 
 ## ⚖️ Clinical Disclaimer
