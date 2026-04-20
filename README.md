@@ -20,23 +20,29 @@ This system demonstrates a multi-stage clinical inference pipeline:
 - `services/`: Neural inference engine logic.
 - `data/`: Source datasets for model training.
 
-  project-name/
+project-name/
 │
-├── app.py
-├── requirements.txt
-├── README.md
+├── app.py                  # Main system entry point (Streamlit)
 │
-├── src/
-│ ├── models/
-│ │ ├── recommendation_model.py
-│ │ ├── sentiment_model.py
-│ │
-│ ├── data/
-│ │ ├── dataset.csv
-│ │
-│ ├── utils/
-│ │ ├── preprocessing.py
-│ │ ├── helpers.py
+├── models/                 # ML model artifacts & training logic
+│   ├── train_model.py
+│   ├── predict.py
+│   ├── model.pkl
+│
+├── nlp/                    # NLP preprocessing pipeline
+│   ├── text_cleaning.py
+│   ├── tokenizer.py
+│   ├── vectorizer.py
+│
+├── services/               # Inference / prediction logic
+│   ├── recommendation.py
+│   ├── sentiment_analysis.py
+│   ├── api_service.py
+│
+├── data/                   # Datasets for training/testing
+│   ├── raw_data.csv
+│   ├── processed_data.csv
+│   ├── test_data.csv
   
   ## 🚀 Features
 - 💊 Drug Recommendation System (ML-based)
@@ -78,3 +84,5 @@ Deployment on cloud (AWS/Streamlit Cloud)
 
 ## ⚖️ Clinical Disclaimer
 **For Research & Educational Demonstration Only.** This software is a prototype for simulating Clinical Decision Support Systems (CDSS). It does not provide medical diagnosis and should never be used as a substitute for professional medical consultation.
+
+### Author - Santhi Ganga
